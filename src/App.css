@@ -101,9 +101,10 @@ h1 {
   font-size: 11px;
   text-align: center;
   margin-top: 25px;
+  color: var(--white);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(172, 45%, 44%);
 }
 
 @media (min-width: 1000px) {
@@ -118,7 +119,6 @@ h1 {
     margin: 100px 150px;
     border-radius: 25px;
   }
-
   .sign-up-image {
     order: 1;
     border-top-right-radius: 25px;
