@@ -1,0 +1,136 @@
+:root {
+  --tomato: hsl(4, 100%, 67%);
+
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+@font-face {
+  font-family: "Roboto-bold";
+  src: url("/newsletter-sign-up-with-success-message/public/assets/fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto-regular";
+  src: url("/newsletter-sign-up-with-success-message/public/assets/fonts/Roboto-Regular.ttf");
+}
+p {
+  font-size: 16px;
+}
+li {
+  list-style-image: url("assets/images/icon-list.svg");
+  margin: 20px 20px 20px 0px;
+  position: relative;
+  right: 15px;
+}
+ul {
+  position: relative;
+}
+body {
+  font-family: "Roboto-regular", sans-serif;
+}
+h1 {
+  font-family: "Roboto-bold", sans-serif;
+}
+/* General styles */
+
+.sign-up-image {
+  width: 100%;
+}
+.main {
+  margin-left: 15px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+.message-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.message-container span {
+  color: var(--tomato);
+}
+.button {
+  margin-bottom: 15px;
+}
+.form-container input {
+  margin-bottom: 25px;
+  border: 1px solid hsl(231, 7%, 60%);
+  padding-left: 30px;
+}
+.form-container input:invalid {
+  background-color: hsl(0, 0%, 100%);
+  border-color: var(--tomato);
+  color: var(--tomato);
+  outline-color: var(--tomato);
+}
+.form-container input,
+.button {
+  height: 45px;
+  border-radius: 10px;
+}
+.button {
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  transition: all 500ms;
+}
+.button:hover {
+  background-color: var(--tomato);
+  border: none;
+}
+/* Success styles */
+.sr-only {
+  visibility: hidden;
+}
+.success-container {
+  margin: 150px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.success-container .button {
+  position: relative;
+  top: 150px;
+  width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 25px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1000px) {
+  body {
+    background-color: var(--charcoal-grey);
+  }
+  #main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--white);
+    margin: 100px 150px;
+    border-radius: 25px;
+  }
+
+  .sign-up-image {
+    order: 1;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    width: 50%;
+    margin: 10px 10px;
+  }
+  .main {
+    margin: 15px;
+  }
+  .success-container{
+    width: 50%;
+    height: 50%;
+  }
+}
